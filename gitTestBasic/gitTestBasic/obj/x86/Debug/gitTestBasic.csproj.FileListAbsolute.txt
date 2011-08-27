@@ -1,0 +1,9 @@
+E:\SteamCraft-Main\gitTestBasic\gitTestBasic\bin\Debug\gitTestBasic.exe
+E:\SteamCraft-Main\gitTestBasic\gitTestBasic\bin\Debug\gitTestBasic.pdb
+E:\SteamCraft-Main\gitTestBasic\gitTestBasic\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\SteamCraft-Main\gitTestBasic\gitTestBasic\obj\x86\Debug\gitTestBasic.Form1.resources
+E:\SteamCraft-Main\gitTestBasic\gitTestBasic\obj\x86\Debug\gitTestBasic.Properties.Resources.resources
+E:\SteamCraft-Main\gitTestBasic\gitTestBasic\obj\x86\Debug\ResGen.read.1.tlog
+E:\SteamCraft-Main\gitTestBasic\gitTestBasic\obj\x86\Debug\ResGen.write.1.tlog
+E:\SteamCraft-Main\gitTestBasic\gitTestBasic\obj\x86\Debug\gitTestBasic.exe
+E:\SteamCraft-Main\gitTestBasic\gitTestBasic\obj\x86\Debug\gitTestBasic.pdb
