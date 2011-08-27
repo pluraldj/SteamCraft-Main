@@ -15,7 +15,7 @@ namespace spTestV2
             get
             {
                 // it would be better to get these from a settings file, but i'm not going to try to tackle that right now
-                return "Server=THEBIGBAD\\PluralDB;" + "Database=SteamCraft;" + "Trusted_Connection=yes;" + "connection timeout=30;";
+                return "Server=strawberry.arvixe.com;" + "Database=SteamCraft;" + "user id=pluraldj;" + "Password=Mikhail03;" + "connection timeout=30;";
             }
         }
 
