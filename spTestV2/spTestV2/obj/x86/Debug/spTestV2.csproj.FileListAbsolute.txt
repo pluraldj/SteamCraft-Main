@@ -1,0 +1,13 @@
+c:\users\plural\documents\visual studio 2010\Projects\spTestV2\spTestV2\bin\Debug\spTestV2.exe.config
+c:\users\plural\documents\visual studio 2010\Projects\spTestV2\spTestV2\bin\Debug\spTestV2.exe
+c:\users\plural\documents\visual studio 2010\Projects\spTestV2\spTestV2\bin\Debug\spTestV2.pdb
+c:\users\plural\documents\visual studio 2010\Projects\spTestV2\spTestV2\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\users\plural\documents\visual studio 2010\Projects\spTestV2\spTestV2\obj\x86\Debug\spTestV2.Form1.resources
+c:\users\plural\documents\visual studio 2010\Projects\spTestV2\spTestV2\obj\x86\Debug\spTestV2.Properties.Resources.resources
+c:\users\plural\documents\visual studio 2010\Projects\spTestV2\spTestV2\obj\x86\Debug\ResGen.read.1.tlog
+c:\users\plural\documents\visual studio 2010\Projects\spTestV2\spTestV2\obj\x86\Debug\ResGen.write.1.tlog
+c:\users\plural\documents\visual studio 2010\Projects\spTestV2\spTestV2\obj\x86\Debug\spTestV2.exe
+c:\users\plural\documents\visual studio 2010\Projects\spTestV2\spTestV2\obj\x86\Debug\spTestV2.pdb
+E:\SteamCraft-Main\spTestV2\spTestV2\bin\Debug\spTestV2.exe.config
+E:\SteamCraft-Main\spTestV2\spTestV2\obj\x86\Debug\spTestV2.exe
+E:\SteamCraft-Main\spTestV2\spTestV2\obj\x86\Debug\spTestV2.pdb
