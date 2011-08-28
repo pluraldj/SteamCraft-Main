@@ -28,3 +28,13 @@ E:\SteamCraft-Main\Login\Login\obj\x86\Debug\Login.Form1.resources
 E:\SteamCraft-Main\Login\Login\obj\x86\Debug\Login.Properties.Resources.resources
 E:\SteamCraft-Main\Login\Login\obj\x86\Debug\GenerateResource.read.1.tlog
 E:\SteamCraft-Main\Login\Login\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\SteamCraft\Login\Login\bin\Debug\Login.exe.config
+C:\SteamCraft\Login\Login\obj\x86\Debug\Login.exe
+C:\SteamCraft\Login\Login\obj\x86\Debug\Login.pdb
+C:\SteamCraft\Login\Login\bin\Debug\Login.exe
+C:\SteamCraft\Login\Login\bin\Debug\Login.pdb
+C:\SteamCraft\Login\Login\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\SteamCraft\Login\Login\obj\x86\Debug\Login.Form1.resources
+C:\SteamCraft\Login\Login\obj\x86\Debug\Login.Properties.Resources.resources
+C:\SteamCraft\Login\Login\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\SteamCraft\Login\Login\obj\x86\Debug\GenerateResource.write.1.tlog

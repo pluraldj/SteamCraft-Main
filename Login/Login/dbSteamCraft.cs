@@ -13,12 +13,12 @@ namespace Login
         {
             get
             {
-                return "Server=THEBIGBAD\\PluralDB;" + "Database=SteamCraft;" + "Trusted_Connection=yes;" + "connection timeout=30;";
+                return "Server=strawberry.arvixe.com;" + "Database=SteamCraft;" + "user id=pluraldj;" + "password=Mikhail03;" + "connection timeout=30;";
             }
         }
         public bool spLogin(string Email, string Password)
         {
-            bool LoginSuccess;
+            int LoginSuccess;
             SqlConnection myconn = new SqlConnection(this.ConnectionString);
             try
             {
@@ -41,10 +41,10 @@ namespace Login
                 cmdLogin.Parameters.Add(P1);
                 cmdLogin.Parameters.Add(P2);
 
-                LoginSuccess = (bool)cmdLogin.ExecuteScalar();
-                if (LoginSuccess != DBNull.Value)
+                LoginSuccess = (int)cmdLogin.ExecuteScalar();
+                if(! DBNull.Value.Equals(LoginSuccess))
                 {
-                    if((bool)LoginSuccess==true)
+                    if((int)LoginSuccess==1)
                     {
                         return true;
                     }
