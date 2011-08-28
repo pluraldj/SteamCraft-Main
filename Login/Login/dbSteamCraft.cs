@@ -42,8 +42,21 @@ namespace Login
                 cmdLogin.Parameters.Add(P2);
 
                 LoginSuccess = (bool)cmdLogin.ExecuteScalar();
-                cmdLogin.Parameters.Clear();
-                return LoginSuccess;
+                if (LoginSuccess != DBNull.Value)
+                {
+                    if((bool)LoginSuccess==true)
+                    {
+                        return true;
+                    }
+                    else
+                    {
+                        return false;
+                    }
+                }
+                else
+                {
+                    return false;
+                }
             }
             catch (Exception)
             {
