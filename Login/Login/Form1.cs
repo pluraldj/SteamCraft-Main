@@ -29,7 +29,7 @@ namespace Login
             bool result = false;
             try
             {
-                result = dbSC.spLogin(Email, Password);
+                result = dbSC.Login(Email, Password);
             }
             catch (Exception ex)
             {
