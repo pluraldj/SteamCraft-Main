@@ -18,7 +18,6 @@ namespace Login
         }
         public bool spLogin(string Email, string Password)
         {
-            int LoginSuccess;
             SqlConnection myconn = new SqlConnection(this.ConnectionString);
             try
             {
@@ -26,32 +25,13 @@ namespace Login
 
                 SqlCommand cmdLogin = new SqlCommand("spLogin", myconn);
                 cmdLogin.CommandType = CommandType.StoredProcedure;
+                cmdLogin.Parameters.Add("@EmailAddress", Email);
+                cmdLogin.Parameters.Add("@Password", Password);
 
-                SqlParameter P1 = new SqlParameter()
+                int LoginSuccess = (int)cmdLogin.ExecuteScalar();
+                if(! DBNull.Value.Equals(LoginSuccess) && LoginSuccess == 1)
                 {
-                    ParameterName = "@EmailAddress",
-                    Value = Email
-                };
-
-                SqlParameter P2 = new SqlParameter()
-                {
-                    ParameterName = "@Password",
-                    Value = Password
-                };
-                cmdLogin.Parameters.Add(P1);
-                cmdLogin.Parameters.Add(P2);
-
-                LoginSuccess = (int)cmdLogin.ExecuteScalar();
-                if(! DBNull.Value.Equals(LoginSuccess))
-                {
-                    if((int)LoginSuccess==1)
-                    {
-                        return true;
-                    }
-                    else
-                    {
-                        return false;
-                    }
+                    return true;
                 }
                 else
                 {

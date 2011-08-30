@@ -31,9 +31,9 @@ namespace Login
             {
                 result = dbSC.spLogin(Email, Password);
             }
-            catch (Exception e2)
+            catch (Exception ex)
             {
-                MessageBox.Show(e2.ToString());
+                MessageBox.Show(ex.ToString());
             }
             if (result == true)
             {
