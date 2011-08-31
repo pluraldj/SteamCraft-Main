@@ -72,6 +72,10 @@ namespace CreateAccount
                 case "SHA512":
                     hash = new SHA512Managed();
                     break;
+
+                default:
+                    hash = new MD5CryptoServiceProvider;
+                    break;
             }
 
             // Compute hash value of our plain text with appended salt.

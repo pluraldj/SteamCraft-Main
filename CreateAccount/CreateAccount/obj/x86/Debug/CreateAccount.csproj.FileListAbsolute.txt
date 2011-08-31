@@ -1,1 +1,2 @@
 E:\SteamCraft-Main\CreateAccount\CreateAccount\bin\Debug\CreateAccount.exe.config
+C:\SteamCraft\CreateAccount\CreateAccount\bin\Debug\CreateAccount.exe.config
