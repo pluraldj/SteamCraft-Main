@@ -8,7 +8,7 @@ namespace CreateAccount
 {
     class SteamCraftHash
     {
-        public string scSalt(string plainText, string hashAlgorithm, byte[] saltBytes)
+        public string scHash(string plainText, string hashAlgorithm, byte[] saltBytes)
         {
             // If salt is not specified, generate it on the fly.
             if (saltBytes == null)
@@ -94,20 +94,6 @@ namespace CreateAccount
             // Return the result.
             return hashValue;
 
-        }
-
-        public string scHash()
-        {
-            string newPassword;
-            byte[] tmpSource;
-            byte[] tmpHash;
-
-            newPassword = "Password";
-
-            tmpSource = ASCIIEncoding.ASCII.GetBytes(newPassword);
-            tmpHash = new MD5CryptoServiceProvider().ComputeHash(tmpSource);
-
-            return string pwHash = Convert.ToBase64String(tmpHash);
         }
     }
 }
