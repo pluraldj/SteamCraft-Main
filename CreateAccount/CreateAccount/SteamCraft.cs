@@ -9,17 +9,25 @@ namespace CreateAccount
 {
     class SteamCraft
     {
+        private static SqlConnection connectSteamCraft
+        {
+            get
+            {
+                SqlConnection myconn = new SqlConnection(SteamCraftConnection.SteamCraftString());
+                myconn.Open();
+                return myconn;
+            }
+        }
+
         public bool createAccount(string email, string firstname, string lastname, string password)
         {
-            SqlConnection myconn = new SqlConnection(SteamCraftConnection.SteamCraftString());
-
             SteamCraftHash passwordhash = new SteamCraftHash();
             string salt = passwordhash.getSalt;
             string hashedpassword = passwordhash.getHash(password, salt);
 
             try
             {
-                SqlCommand commandCreateAccount = new SqlCommand("spCreateAccount", myconn);
+                SqlCommand commandCreateAccount = new SqlCommand("spCreateAccount", connectSteamCraft);
                 commandCreateAccount.CommandType = CommandType.StoredProcedure;
                 commandCreateAccount.Parameters.AddWithValue("@EmailAddress", email);
                 commandCreateAccount.Parameters.AddWithValue("@FirstName", firstname);
@@ -31,7 +39,7 @@ namespace CreateAccount
 
                 commandCreateAccount.Parameters.Clear();
 
-                if (accountcreated != null && accountcreated == 1)
+                if (accountcreated == 1)
                 {
                     return true;
                 }
@@ -49,10 +57,10 @@ namespace CreateAccount
 
             finally
             {
-                if (myconn != null && myconn.State == ConnectionState.Open)
+                if (connectSteamCraft != null && connectSteamCraft.State == ConnectionState.Open)
                 {
-                    myconn.Close();
-                    myconn.Dispose();
+                    connectSteamCraft.Close();
+                    connectSteamCraft.Dispose();
                 }
             }
         }
