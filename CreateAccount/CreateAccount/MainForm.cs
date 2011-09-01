@@ -29,23 +29,23 @@ namespace CreateAccount
             try
             {
                 success = createaccountnow.createAccount(email, firstname, lastname, password);
+
+                if (success == true)
+                {
+                    MessageBox.Show("Account successfully created!");
+                }
+
+                if (success == false)
+                {
+                    MessageBox.Show("Account failed to be created!");
+                }
+
             }
 
             catch (Exception ex)
             {
                 MessageBox.Show(ex.ToString());
             }
-
-            if (success == true)
-            {
-                MessageBox.Show("Account successfully created!");
-            }
-
-            if (success == false)
-            {
-                MessageBox.Show("Account failed to be created!");
-            }
-
         }
     }
 }
