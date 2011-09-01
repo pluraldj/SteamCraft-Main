@@ -1,2 +1,11 @@
 E:\SteamCraft-Main\CreateAccount\CreateAccount\bin\Debug\CreateAccount.exe.config
 C:\SteamCraft\CreateAccount\CreateAccount\bin\Debug\CreateAccount.exe.config
+E:\SteamCraft-Main\CreateAccount\CreateAccount\bin\Debug\CreateAccount.exe
+E:\SteamCraft-Main\CreateAccount\CreateAccount\bin\Debug\CreateAccount.pdb
+E:\SteamCraft-Main\CreateAccount\CreateAccount\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\SteamCraft-Main\CreateAccount\CreateAccount\obj\x86\Debug\CreateAccount.MainForm.resources
+E:\SteamCraft-Main\CreateAccount\CreateAccount\obj\x86\Debug\CreateAccount.Properties.Resources.resources
+E:\SteamCraft-Main\CreateAccount\CreateAccount\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\SteamCraft-Main\CreateAccount\CreateAccount\obj\x86\Debug\GenerateResource.write.1.tlog
+E:\SteamCraft-Main\CreateAccount\CreateAccount\obj\x86\Debug\CreateAccount.exe
+E:\SteamCraft-Main\CreateAccount\CreateAccount\obj\x86\Debug\CreateAccount.pdb

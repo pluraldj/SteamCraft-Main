@@ -55,7 +55,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SteamCraft.cs" />
-    <Compile Include="SteamCraftConfig.cs" />
+    <Compile Include="SteamCraftConnection.cs" />
     <Compile Include="SteamCraftDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

@@ -8,96 +8,56 @@ namespace CreateAccount
 {
     class SteamCraftHash
     {
-        public string scHash(string plainText, string hashAlgorithm, byte[] saltBytes)
+        public string getSalt
         {
-            // If salt is not specified, generate it on the fly.
-            if (saltBytes == null)
+            get
             {
-                // Define min and max salt sizes.
-                int minSaltSize = 4;
-                int maxSaltSize = 8;
-
-                // Generate a random number for the size of the salt.
-                Random randomSalt = new Random();
-                int saltSize = randomSalt.Next(minSaltSize, maxSaltSize);
-
-                // Allocate a byte array, which will hold the salt.
-                saltBytes = new byte[saltSize];
-
-                // Initialize a random number generator.
-                RNGCryptoServiceProvider rng = new RNGCryptoServiceProvider();
-
-                // Fill the salt with cryptographically strong byte values.
-                rng.GetNonZeroBytes(saltBytes);
+                Guid saltGuid = Guid.NewGuid();
+                return saltGuid.ToString();
             }
+        }
 
-            // Convert plain text into a byte array.
-            byte[] plainTextBytes = Encoding.UTF8.GetBytes(plainText);
+        public string getHash(string password, string salt)
+        {
+            // Convert password into a byte array
+            byte[] passwordBytes = Encoding.UTF8.GetBytes(password);
 
-            // Allocate array, which will hold plain text and salt.
-            byte[] plainTextWithSaltBytes = new byte[plainTextBytes.Length + saltBytes.Length];
+            // Convert salt from getSalt into a byte array
+            byte[] saltBytes = Encoding.UTF8.GetBytes(salt);
 
-            // Copy plain text bytes into resulting array.
-            for (int i = 0; i < plainTextBytes.Length; i++)
-                plainTextWithSaltBytes[i] = plainTextBytes[i];
+            // Allocate array, which will hold password and salt
+            byte[] passwordWithSaltBytes = new byte[passwordBytes.Length + saltBytes.Length];
 
-            // Append salt bytes to the resulting array.
+            // Copy password bytes into resulting array
+            for (int i = 0; i < passwordBytes.Length; i++)
+                passwordWithSaltBytes[i] = passwordBytes[i];
+
+            // Append salt bytes to the resulting array
             for (int i = 0; i < saltBytes.Length; i++)
-                plainTextWithSaltBytes[plainTextBytes.Length + i] = saltBytes[i];
+                passwordWithSaltBytes[passwordBytes.Length + i] = saltBytes[i];
 
-            // Because we support multiple hashing algorithms, we must define
-            // hash object as a common (abstract) base class. We will specify the
-            // actual hashing algorithm class later during object creation.
-            HashAlgorithm hash;
+            // Create hashing algorithm object. I just picked one. No, really.
+            HashAlgorithm hash = new SHA512Managed();
 
-            // Make sure hashing algorithm name is specified.
-            if (hashAlgorithm == null)
-                hashAlgorithm = "";
+            // Compute hash value of the password with appended salt
+            byte[] hashBytes = hash.ComputeHash(passwordWithSaltBytes);
 
-            // Initialize appropriate hashing algorithm class.
-            switch (hashAlgorithm.ToUpper())
-            {
-                case "SHA1":
-                    hash = new SHA1Managed();
-                    break;
-
-                case "SHA256":
-                    hash = new SHA256Managed();
-                    break;
-
-                case "SHA384":
-                    hash = new SHA384Managed();
-                    break;
-
-                case "SHA512":
-                    hash = new SHA512Managed();
-                    break;
-
-                default:
-                    hash = new MD5CryptoServiceProvider;
-                    break;
-            }
-
-            // Compute hash value of our plain text with appended salt.
-            byte[] hashBytes = hash.ComputeHash(plainTextWithSaltBytes);
-
-            // Create array which will hold hash and original salt bytes.
+            // Append salt bytes to the result
             byte[] hashWithSaltBytes = new byte[hashBytes.Length + saltBytes.Length];
 
-            // Copy hash bytes into resulting array.
+            // Copy hash bytes into resulting array
             for (int i = 0; i < hashBytes.Length; i++)
                 hashWithSaltBytes[i] = hashBytes[i];
 
-            // Append salt bytes to the result.
+            // Append salt bytes to the result
             for (int i = 0; i < saltBytes.Length; i++)
                 hashWithSaltBytes[hashBytes.Length + i] = saltBytes[i];
 
-            // Convert result into a base64-encoded string.
+            // convert to base64-encoded string
             string hashValue = Convert.ToBase64String(hashWithSaltBytes);
 
-            // Return the result.
+            // Spit that mofo back out
             return hashValue;
-
         }
     }
 }
