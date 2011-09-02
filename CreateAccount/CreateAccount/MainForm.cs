@@ -30,12 +30,12 @@ namespace CreateAccount
             {
                 success = createaccountnow.createAccount(email, firstname, lastname, password);
 
-                if (success == true)
+                if (success)
                 {
                     MessageBox.Show("Account successfully created!");
                 }
 
-                if (success == false)
+                else
                 {
                     MessageBox.Show("Account failed to be created!");
                 }
