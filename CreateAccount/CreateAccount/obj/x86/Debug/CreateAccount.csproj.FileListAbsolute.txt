@@ -9,3 +9,5 @@ E:\SteamCraft-Main\CreateAccount\CreateAccount\obj\x86\Debug\GenerateResource.re
 E:\SteamCraft-Main\CreateAccount\CreateAccount\obj\x86\Debug\GenerateResource.write.1.tlog
 E:\SteamCraft-Main\CreateAccount\CreateAccount\obj\x86\Debug\CreateAccount.exe
 E:\SteamCraft-Main\CreateAccount\CreateAccount\obj\x86\Debug\CreateAccount.pdb
+C:\SteamCraft\CreateAccount\CreateAccount\obj\x86\Debug\CreateAccount.exe
+C:\SteamCraft\CreateAccount\CreateAccount\obj\x86\Debug\CreateAccount.pdb
