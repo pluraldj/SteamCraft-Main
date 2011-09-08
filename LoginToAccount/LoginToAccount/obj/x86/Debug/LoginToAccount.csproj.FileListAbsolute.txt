@@ -9,3 +9,8 @@ E:\SteamCraft-Main\LoginToAccount\LoginToAccount\obj\x86\Debug\GenerateResource.
 E:\SteamCraft-Main\LoginToAccount\LoginToAccount\obj\x86\Debug\GenerateResource.write.1.tlog
 E:\SteamCraft-Main\LoginToAccount\LoginToAccount\obj\x86\Debug\LoginToAccount.exe
 E:\SteamCraft-Main\LoginToAccount\LoginToAccount\obj\x86\Debug\LoginToAccount.pdb
+<<<<<<< HEAD
+=======
+C:\SteamCraft\LoginToAccount\LoginToAccount\obj\x86\Debug\LoginToAccount.exe
+C:\SteamCraft\LoginToAccount\LoginToAccount\obj\x86\Debug\LoginToAccount.pdb
+>>>>>>> 04d29af226982b3b8d7d90d11642fa8543d725be
