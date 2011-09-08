@@ -1,0 +1,5 @@
+E:\SteamCraft-Main\CreateNewAccount\CreateNewAccount\bin\CreateNewAccount.dll
+E:\SteamCraft-Main\CreateNewAccount\CreateNewAccount\bin\CreateNewAccount.pdb
+E:\SteamCraft-Main\CreateNewAccount\CreateNewAccount\obj\Debug\ResolveAssemblyReference.cache
+E:\SteamCraft-Main\CreateNewAccount\CreateNewAccount\obj\Debug\CreateNewAccount.dll
+E:\SteamCraft-Main\CreateNewAccount\CreateNewAccount\obj\Debug\CreateNewAccount.pdb

@@ -1,0 +1,11 @@
+C:\SteamCraft\LoginToAccount\LoginToAccount\bin\Debug\LoginToAccount.exe.config
+E:\SteamCraft-Main\LoginToAccount\LoginToAccount\bin\Debug\LoginToAccount.exe.config
+E:\SteamCraft-Main\LoginToAccount\LoginToAccount\bin\Debug\LoginToAccount.exe
+E:\SteamCraft-Main\LoginToAccount\LoginToAccount\bin\Debug\LoginToAccount.pdb
+E:\SteamCraft-Main\LoginToAccount\LoginToAccount\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\SteamCraft-Main\LoginToAccount\LoginToAccount\obj\x86\Debug\LoginToAccount.MainForm.resources
+E:\SteamCraft-Main\LoginToAccount\LoginToAccount\obj\x86\Debug\LoginToAccount.Properties.Resources.resources
+E:\SteamCraft-Main\LoginToAccount\LoginToAccount\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\SteamCraft-Main\LoginToAccount\LoginToAccount\obj\x86\Debug\GenerateResource.write.1.tlog
+E:\SteamCraft-Main\LoginToAccount\LoginToAccount\obj\x86\Debug\LoginToAccount.exe
+E:\SteamCraft-Main\LoginToAccount\LoginToAccount\obj\x86\Debug\LoginToAccount.pdb
